@@ -227,69 +227,65 @@
                 </td>
                 <td>
                     <div>
-                        <select><option>Gradebook</option></select>
-                        <button type = "button">Import</button>
-                        <select><option>Export</option></select>
-                        <button type = "button">Configure</button>
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><h6 class="wd-fg-color-red" style="display: inline-flex;">CS4550: Web Development</h6></li>
+                              <li class="breadcrumb-item"><h6 class="wd-fg-color-red" style="display: inline-flex;">Fall 2023</h6></li>
+                              <li class="breadcrumb-item"><h6 class="wd-fg-color-red" style="display: inline-flex;">Section 2</h6></li>
+                              <li class="breadcrumb-item active"><a href="grades.html" class="black-link">Grades</a></li>
+                            </ol>
+                        </nav>
+                        <hr>
                     </div>
-                    <div>
-                        <h2>Student Names</h2>
+                    <div class="float-end">
+                        <button type="button" class="btn btn-primary gray-button">
+                            <i class="fa fa-file-import"></i>
+                            Import
+                        </button>
+                        <button type="button" class="btn btn-primary gray-button">
+                            <i class="fa fa-file-export"></i>
+                            Export
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary gray-button">
+                            <i class="fa fa-gear"></i>
+                        </button>
+                    
                     </div>
-                    <div>
-                        <input type = "text" placeholder="Search Students"/>
-                    </div>
-                    <div>
-                        <h2>Assignment Names</h2>
-                    </div>
-                    <div>
-                        <input type = "text" placeholder="Search Assignments"/>
-                    </div>
-                    <div>
-                        <br/>
-                        <button type = "button">Apply Filters</button>
-                    </div>
-                    <div>
-                        <table border="1">
-                            <thead>
-                                <tr>
-                                    <th>Student Name</th>
-                                    <th>A1 SETUP <br/> Out of 100</th>
-                                    <th>A2 HTML <br/> Out of 100</th>
-                                    <th>A3 CSS <br/> Out of 100</th>
-                                    <th>A4 BOOTSTRAP <br/> Out of 100</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Nagi Aboushaca</td>
-                                    <td>100</td>
-                                    <td>98</td>
-                                    <td><input type = "number" value = "90"/</td>
-                                    <td>100</td>
-                                </tr>
-                                <tr>
-                                    <td>Yapper McYappington</td>
-                                    <td>70</td>
-                                    <td><input type = "number" value = "88"/</td>
-                                    <td>85</td>
-                                    <td>100</td>
-                                </tr>
-                                <tr>
-                                    <td>Mike Shah</td>
-                                    <td><input type = "number" value = "100"/</td>
-                                    <td>100</td>
-                                    <td>100</td>
-                                    <td>100</td>
-                                </tr>
-                                <tr>
-                                    <td>Bob DaBuilder</td>
-                                    <td>50</td>
-                                    <td>78</td>
-                                    <td>90</td>
-                                    <td><input type = "number" value = "34"/</td>
-                                </tr>
-                            </tbody>
-                        </table>
+
+                    <br> <br> <br> <br>
+                    <div class="row mb-3">
+                        <label for="names" class="col-sm-2 col-form-label">
+                            <span class="bold">Student Names</span></label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control"
+                                 id="names" placeholder="Search Students"/>
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label for="a-names" class="col-sm-2 col-form-label">
+                          <span class="bold">Assignment Names</span></label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control"
+                                 id="a-names" placeholder="Search Assignments"/>
+                        </div>
+                      </div>
+                      <table class="table">
+                        <thead>
+                        <tr class="wd-bg-color-light-gray"><th>Student Name</th><th>A1 SETUP</th><th>A2 HTML</th><th>A3 CSS</th><th>A4 BOOTSTRAP</th></tr>
+                        </thead>
+                        <tbody>
+                        <tr class="wd-bg-color-white"><td>Nagi Aboushaca</td><td>100</td><td>
+                            <div class="col-sm-4">
+                                <input type="number" class="form-control" value="94"/>
+                            </div>
+                        </td><td>100</td><td>85</td></tr>
+                        <tr class="wd-bg-color-light-gray"><td>Yapper McYappington</td><td>34</td><td>93</td><td>10</td><td>5</td></tr>
+                        <tr class="wd-bg-color-white"><td>Mike Shah</td><td>89</td><td>92</td><td>90</td><td>85</td></tr>
+                        <tr class="wd-bg-color-light-gray"><td>Leo Uchida</td><td>80</td><td>80</td><td>80</td><td>80</td></tr>
+                        </tbody>
+                     </table>
                     </div>
                 </td>
             </tr>

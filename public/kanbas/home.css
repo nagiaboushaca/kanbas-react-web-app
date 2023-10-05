@@ -38,6 +38,9 @@ p {
  .wd-bg-color-gray {
     background-color: gray;
  }
+ .wd-bg-color-light-gray {
+    background-color: lightgray;
+ }
 
  .profile-icon-color {
     font-weight: 50;
@@ -143,3 +146,4 @@ p {
     text-decoration: none;
     color: black;
  }
+
