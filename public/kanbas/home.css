@@ -76,7 +76,10 @@ p {
  .selected-navigation-border-left {
     width: 195px;
     height: 30px;
-    border: none;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left-color: black;
     text-align: start;
     font-size: medium;
     padding-left: 10%;
@@ -112,6 +115,9 @@ p {
  .push-left {
     padding-left: 40px;
  }
+ .margin-left {
+    margin-left: 20px;
+ }
  .push-course-cards {
     margin-right: 40px;
     margin-bottom: 40px;
@@ -123,4 +129,8 @@ p {
 
  .course-card-dimensions {
     width: 260px;
+ }
+
+ .bold {
+    font-weight: bolder;
  }
