@@ -134,3 +134,12 @@ p {
  .bold {
     font-weight: bolder;
  }
+
+ .smaller {
+    font-size: smaller;
+ }
+
+ .black-link {
+    text-decoration: none;
+    color: black;
+ }
