@@ -1,14 +1,16 @@
+p {
+    word-break: break-all;
+    white-space: normal;
+}
+
 .neu-logo-dimensions {
-    width: 80px;
+    width: 90px;
     height: 80px;
     text-align: center;
 }
 .sidebar-icon-dimensions {
-    width: 80px;
+    width: 90px;
     height: 65px;
-    border-color: white;
-    border-width: 1px;
-    border-style: solid;
     text-align: center;
     font-size: small;
  }
@@ -18,6 +20,7 @@
 .wd-fg-color-blue { color: #7070ff; }
 .wd-fg-color-red { color: #ef1d1d; }
 .wd-fg-color-green { color: green; }
+.wd-fg-color-gray { color: gray;}
 
  .wd-bg-color-black {
     background-color: rgb(0,0,0);
@@ -30,6 +33,9 @@
  }
  .wd-bg-color-white {
     background-color: rgb(255, 255, 255);
+ }
+ .wd-bg-color-gray {
+    background-color: gray;
  }
 
  .profile-icon-color {
@@ -54,4 +60,46 @@
 
  .center-bottom {
     vertical-align: bottom;
+ }
+
+ .navigation-sidebar-dimensions {
+    width: 195px;
+    height: 30px;
+    border: none;
+    text-align: start;
+    font-size: medium;
+    padding-left: 10%;
+    text-decoration: none;
+ }
+
+ .selected-navigation-border-left {
+    width: 195px;
+    height: 30px;
+    border: none;
+    text-align: start;
+    font-size: medium;
+    padding-left: 10%;
+ }
+
+ .red-links {
+    color:red;
+    text-decoration: none;
+ }
+
+ .btn-primary.red-button {
+
+    background-color: red;
+ 
+    border: none;
+ 
+    border-radius: 5px;
+ }
+
+ .btn-primary.gray-button {
+
+    background-color: rgb(201, 201, 201);
+ 
+    border: none;
+ 
+    border-radius: 5px;
  }
