@@ -13,6 +13,7 @@ p {
     height: 65px;
     text-align: center;
     font-size: small;
+    border:none
  }
 
 .wd-fg-color-black { color: black; }
@@ -102,4 +103,24 @@ p {
     border: none;
  
     border-radius: 5px;
+ }
+
+ .light-font-weight {
+    font-weight: lighter;
+ }
+
+ .push-left {
+    padding-left: 40px;
+ }
+ .push-course-cards {
+    margin-right: 40px;
+    margin-bottom: 40px;
+ }
+
+ hr {
+    width: 1000px;
+ }
+
+ .course-card-dimensions {
+    width: 260px;
  }
