@@ -1,9 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import db from "../Database";
 import "./index.css";
+import Courses from "../Courses";
 
 function Dashboard() {
   const courses = db.courses;
+  const colorPaths = ["images/green.png", "images/neu-logo.png", "images/orange.png",
+  "images/red.png", "images/turqoise.png", "images/pink.png"];
+
   return (
     <div className = "wd-dashboard-content">
       <h1>Dashboard</h1>
@@ -16,7 +20,7 @@ function Dashboard() {
           <div className="col">
           <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item">
              <div className="card h-100">
-                  <img src="images/green.png" className="card-img-top" alt="..." />
+                  <img src={colorPaths[Math.floor(Math.random() * 5)]} className="card-img-top" width="260px" height="150px" />
                   <h5 className="card-title">{course.name}</h5>
                   <p className="card-text">{course.number}, {course.startDate} to {course.endDate}</p>
                 </div>
