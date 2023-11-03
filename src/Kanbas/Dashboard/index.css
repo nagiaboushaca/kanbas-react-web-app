@@ -1,19 +1,73 @@
 .wd-dashboard-grid .col {
-    max-width: 260px;
-    min-width: 260px;
-    margin-top: 30px;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  
-  .wd-card-dimensions {
-    min-width: 600px;
-    max-width: 1300px;
-  }
-  
-  .wd-dashboard-content {
-  
-    padding-left: 25px;
-  }
-  
+  max-width: 260px;
+  min-width: 260px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.wd-card-dimensions {
+  min-width: 600px;
+  max-width: 1300px;
+}
+
+.wd-dashboard-content {
+
+  padding-left: 25px;
+}
+
+.green-button {
+  background-color: #4CAF50;
+  color: #fff; 
+  border: none; 
+  padding: 10px 10px; 
+  cursor: pointer;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 16px; 
+  border-radius: 10px; 
+}
+.blue-button {
+  background-color: #3498db; 
+  color: #fff; 
+  border: none; 
+  padding: 10px 10px; 
+  cursor: pointer; 
+  text-align: center;
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  border-radius: 10px; 
+}
+/* Define the button style with a yellow background and black text */
+.yellow-button {
+  background-color: #f1c40f; 
+  color: #000; 
+  border: none; 
+  padding: 5px 10px; 
+  cursor: pointer; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  border-radius: 4px; 
+}
+.red-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 16px;
+  border-radius: 4px; 
+}
+.divider{
+  width:15px;
+  height:auto;
+  display:inline-block;
+}
