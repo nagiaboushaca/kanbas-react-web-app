@@ -15,12 +15,13 @@ function ModuleList() {
   return (
     <ul className="list-group">
       <li className="list-group-item">
-        <button
+        <button className = "green-button"
           onClick={() => dispatch(addModule({ ...module, course: courseId }))}
         >
           Add
         </button>
-        <button onClick={() => dispatch(updateModule(module))}>Update</button>
+        <button  className = "yellow-button"
+        onClick={() => dispatch(updateModule(module))}>Update</button>
         <input
           value={module.name}
           onChange={(e) =>
@@ -38,8 +39,8 @@ function ModuleList() {
         .filter((module) => module.course === courseId)
         .map((module, index) => (
           <li key={index} className="list-group-item">
-            <button onClick={() => dispatch(setModule(module))}>Edit</button>
-            <button onClick={() => dispatch(deleteModule(module._id))}>
+            <button className = "yellow-button" onClick={() => dispatch(setModule(module))}>Edit</button>
+            <button className = "red-button" onClick={() => dispatch(deleteModule(module._id))}>
               Delete
             </button>
             <h3>{module.name}</h3>
