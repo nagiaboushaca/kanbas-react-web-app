@@ -2,6 +2,8 @@
   max-width: 260px;
   min-width: 260px;
   margin-top: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
   cursor: pointer;
   text-decoration: none;
 }

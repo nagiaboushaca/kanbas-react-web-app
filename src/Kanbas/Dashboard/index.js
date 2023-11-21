@@ -54,8 +54,8 @@ function Dashboard({
         <div className="wd-card-dimensions row rows-col-4">
         {courses.map((course, index) => (
           <Link
-            key={index}
-            to={`/Kanbas/Courses/${course._id}`}
+            key={course._id}
+            to={`/Kanbas/Courses/${course._id.$oid}`}
             className="list-group-item"
           >
             <div className="col">
